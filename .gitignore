@@ -1,4 +1,5 @@
 conf/
+.idea/
 log/
 tmp/
 upload/
