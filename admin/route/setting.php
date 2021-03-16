@@ -41,6 +41,7 @@ if($action == 'base') {
 		
 		$sitebrief = param('sitebrief', '', FALSE);
 		$sitename = param('sitename', '', FALSE);
+		$keyword = param('keyword', '', FALSE);
 		$runlevel = param('runlevel', 0);
 		$user_create_on = param('user_create_on', 0);
 		$user_create_email_on = param('user_create_email_on', 0);
@@ -56,6 +57,7 @@ if($action == 'base') {
 		$replace = array();
 		$replace['sitename'] = $sitename;
 		$replace['sitebrief'] = $sitebrief;
+		$replace['keyword'] = $keyword;
 		$replace['runlevel'] = $runlevel;
 		$replace['user_create_on'] = $user_create_on;
 		$replace['user_create_email_on'] = $user_create_email_on;
