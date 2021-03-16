@@ -143,8 +143,8 @@ if(empty($action) || $action == 'list') {
 		
 		$arr = array (
 			'name' => $name,
-			'$seo_title' => $seo_title,
-			'$seo_keywords' => $seo_keywords,
+			'seo_title' => $seo_title,
+			'seo_keywords' => $seo_keywords,
 			'rank' => $rank,
 			'brief' => $brief,
 			'announcement' => $announcement,
