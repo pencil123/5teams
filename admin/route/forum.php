@@ -114,6 +114,8 @@ if(empty($action) || $action == 'list') {
 		
 		$input = array();
 		$input['name'] = form_text('name', $_forum['name']);
+		$input['seo_title'] = form_text('seo_title', $_forum['seo_title']);
+		$input['seo_keywords'] = form_text('seo_keywords', $_forum['seo_keywords']);
 		$input['rank'] = form_text('rank', $_forum['rank']);
 		$input['brief'] = form_textarea('brief', $_forum['brief'], '100%', 80);
 		$input['announcement'] = form_textarea('announcement', $_forum['announcement'], '100%', 80);
@@ -128,6 +130,8 @@ if(empty($action) || $action == 'list') {
 	} elseif($method == 'POST') {	
 		
 		$name = param('name');
+		$seo_title = param('seo_title');
+		$seo_keywords = param('seo_keywords');
 		$rank = param('rank', 0);
 		$brief = param('brief', '', FALSE);
 		$announcement = param('announcement', '', FALSE);
@@ -139,6 +143,8 @@ if(empty($action) || $action == 'list') {
 		
 		$arr = array (
 			'name' => $name,
+			'$seo_title' => $$seo_title,
+			'$seo_keywords' => $$seo_keywords,
 			'rank' => $rank,
 			'brief' => $brief,
 			'announcement' => $announcement,

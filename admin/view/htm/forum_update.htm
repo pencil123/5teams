@@ -14,9 +14,23 @@
 							<?php echo $input['name'];?>
 						</div>
 					</div>
+				<!--{hook admin_forum_update_forum_name_after.htm}-->
+				<div class="form-group row">
+					<label class="col-sm-2 form-control-label" for="seo_title"><?php echo "seo_title";?>：</label>
+					<div class="col-sm-3">
+						<?php echo $input['seo_title'];?>
+					</div>
+				</div>
+				<!--{hook admin_forum_update_forum_name_after.htm}-->
+				<div class="form-group row">
+					<label class="col-sm-2 form-control-label" for="seo_keywords"><?php echo "seo_keywords";?>：</label>
+					<div class="col-sm-3">
+						<?php echo $input['seo_keywords'];?>
+					</div>
+				</div>
 					<!--{hook admin_forum_update_forum_name_after.htm}-->
 					<div class="form-group row">
-						<label class="col-sm-2 form-control-label" for="name"><?php echo lang('rank');?>：</label>
+						<label class="col-sm-2 form-control-label" for="rank"><?php echo lang('rank');?>：</label>
 						<div class="col-sm-3">
 							<?php echo $input['rank'];?>
 						</div>
